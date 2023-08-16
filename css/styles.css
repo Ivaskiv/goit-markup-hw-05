@@ -320,6 +320,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+    margin-bottom: 8px;
 }
 .modal-form-title {
     margin: 72px 24px 16px 24px;
@@ -334,9 +336,9 @@ body {
 }
 
 .modal-form-label {
-    display: flex;
+    display: block;
+    margin-bottom: 4px;
     justify-content: center;
-    flex-direction: column;
     width: 360px;
     color: var(--color-light-slate);
     font-family: Roboto;
@@ -344,22 +346,17 @@ body {
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    margin-bottom: 4px;
-
-    
 }
 .modal-form-inputs {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
 }
-.modal-form-input {
-    display: flex;
-    width: 360px;
+.modal-form-input input{
+    width: 100%;
     height: 40px;
     border-radius: 4px;
-    border: 1px solid var(--color-blue, rgba(46, 47, 66, 0.40));
-
+    border: 1px solid rgba(46, 47, 66, 0.4);
 }
 .modal-form-icon {
     display: flex;
@@ -425,15 +422,11 @@ body {
     align-items: center;
     justify-content: center;
     fill: transparent;
-
 }
 .modal__form-input-checkbox input:checked {
 background-color:#404bbf; 
 border: none;
 fill:#F4F4FD; 
-
-
-
 }
 .form-btn {
     width: 169px;
@@ -497,6 +490,7 @@ fill:#F4F4FD;
 }
 .modal__form-input input:focus {
     border-color: var(--color-iris);
+            fill: #4D5AE5;
 }
 .modal__form-svg {
     width: 18px;
@@ -944,7 +938,7 @@ fill:#F4F4FD;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
-    line-height: 1.5;
+    
     letter-spacing: 0.02em;
 }
 .footer-form-input {
@@ -957,7 +951,7 @@ fill:#F4F4FD;
     line-height: 2;
     letter-spacing: 0.04em;
     color: var(--color-white);
-
+    line-height: 1.5;
     width: 264px;
     height: 40px;
     flex-shrink: 0;
@@ -966,6 +960,9 @@ fill:#F4F4FD;
     border: 1px solid var(--color-white);
     background: var(--color-blue);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    background-color: transparent;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .footer-form-label button {
     display: inline-flex;
@@ -979,6 +976,7 @@ fill:#F4F4FD;
     height: 40px;
 
     /* Button Text */
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -987,7 +985,7 @@ fill:#F4F4FD;
     text-align: center;
     letter-spacing: 0.04em;
     color: var(--color-white);
-
+border: none;
     border-radius: 4px;
     background: var(--color-iris);
     border: 1px solid var(--color-iris);
@@ -1001,8 +999,8 @@ fill:#F4F4FD;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .footer-form__icon-svg {
-    width: 24px;
-    height: 24px;
+    width: 24;
+    height: 24;
     fill: var(--color-white);
 }
 /* footer-Subscribe */
