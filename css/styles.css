@@ -271,6 +271,9 @@ body {
     visibility: hidden;
     pointer-events: none; 
 }
+.modal {
+    margin: 0 24px;
+}
 .modal__main {
     position: absolute;
     top: 50%;
@@ -334,9 +337,7 @@ body {
 }
 .modal__form {
     display: block;
-    margin: 0 24px;
-    gap: 8px;
-    margin-bottom: 16px; 
+    margin-bottom: 8px; 
 
     /* display: inline-flex;
     flex-direction: column;
@@ -346,6 +347,7 @@ body {
     /* margin-bottom: 8px; */
 }
 .modal__form-label {
+    display: block;
     margin-bottom: 4px;
     width: 360px;
     color: var(--color-light-slate);
@@ -1005,6 +1007,7 @@ border: none;
     padding-left: 16px;
     color: var(--color-white);
     font-size: 12px;
+    line-height: 1.5; 
     letter-spacing: 0.04em;
     outline: transparent;
     border-radius: 4px;
