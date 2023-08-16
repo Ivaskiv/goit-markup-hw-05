@@ -420,9 +420,6 @@ body {
 .modal__form-custom-checkbox span{
     width: 16px;
     height: 16px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 2px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -433,11 +430,26 @@ background-color:#404bbf;
 border: none;
 fill:#F4F4FD; 
 }
-
+            .modal__form-custom-checkbox {
+                border: 1px solid rgba(46, 47, 66, 0.4);
+                border-radius: 2px;
+                transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                            border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            input:checked + span {
+                background-color:  #404bbf; 
+                bottom: none;
+            }
+            input:checked + span svg.icon {
+                fill: #F4F4FD; 
+            }
 .form-btn {
-    width: 169px;
+            display: block;
+            min-width: 169px;
+    height: 56px;
     color: var(--color-white);
-    font-family: Roboto;
+            font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5; 
@@ -496,7 +508,7 @@ fill:#F4F4FD;
     padding-left: 38px;
     outline: transparent; /*стиль контуру*/
     border-radius: 4px;
-    border: 1px solid var(--color-blue);
+                border: 1px solid rgba(46, 47, 66, 0.4); 
     background-color: transparent; /*колір фону елемента*/
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -510,6 +522,9 @@ fill:#F4F4FD;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+            input:checked + .modal__form-svg {
+            fill: #4D5AE5; /* Колір при кліку на input */
+            }
         .modal__form-comment textarea{
             font-family: Roboto;
             font-size: 12px;
@@ -525,6 +540,15 @@ fill:#F4F4FD;
             resize: none;
             transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             border-color: var(--color-blue, rgba(46, 47, 66, 0.40));
+        }
+        .modal__form-textarea {
+            color: rgba(46, 47, 66, 0.4);
+            border: 1px solid rgba(46, 47, 66, 0.4);
+            padding: 8px 16px;
+            outline: transparent;
+        }
+        .modal__form-textarea:focus {
+            border-color: #4D5AE5;
         }
 .modal__form-input input:focus + .modal__form-svg use {
     border-color: var(--color-iris);
@@ -567,6 +591,7 @@ fill:#F4F4FD;
     line-height: 1.17;
     letter-spacing: 0.04em;
 }
+
     /* приховати галочку checkbox */
 .modal-form-checkbox {
     /* position: absolute;
@@ -582,23 +607,25 @@ fill:#F4F4FD;
 }
 
 .modal__form-btn {
-    display: flex;
+            display: block;
     justify-content: center;
-    width: 169px;
+            min-width: 169px;
     height: 56px;
     margin: 0 auto;
     padding: 16px 32px;
     border-radius: 4px;
     background: var(--iris, #4D5AE5);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-
+            font-family: "Roboto", sans-serif;
     color: var(--white, #FFF);
     text-align: center;
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+            cursor: pointer;
+            border: none;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 /*features*/
