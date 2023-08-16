@@ -922,7 +922,7 @@ fill:#F4F4FD;
     background-color: var(--color-green);
 }
 
-.footer-social__icon-li>svg{
+.footer-social__icon-li svg{
     width: 24;
     height: 24;
 }
