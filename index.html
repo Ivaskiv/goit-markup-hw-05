@@ -436,17 +436,17 @@
 
     </footer>
     <!--modal_button-close-->
-    <div class="modal__main is-hidden" data-modal="modal">
-        <!-- <div class="modal__main"> -->
-            <button type="button" class="modal__btn-close" data-modal-close="modal">
+    <div class="modal is-hidden" data-modal="modal">
+        <div class="modal__main">
+            <button type="button" class="modal__close" data-modal-close="modal">
                 <svg class="modal__svg icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close-black-18dp"></use>
                 </svg>
             </button>
 
-            <p class="modal__caption">Leave your contacts and we will call you back</p>
+            <p class="modal__title">Leave your contacts and we will call you back</p>
             <!-- modal-form -->
-            <form class="modal">
+            <form>
                 <div class="modal__form">
                     <label class="modal__form-label" for="user-name">
                         Name
@@ -457,9 +457,9 @@
                             <use href="./images/icons.svg#icon-person-black-18dp"></use>
                         </svg>
                     </div>
-                <!-- </div> -->
+                </div>
 
-                <!-- <div class="modal__form"> -->
+                <div class="modal__form">
                     <label class="modal__form-label" for="phone">
                         Phone
                     </label>
@@ -469,9 +469,9 @@
                             <use href="./images/icons.svg#icon-phone-black-18dp"></use>
                         </svg>
                     </div>
-                <!-- </div> -->
+                </div>
 
-                <!-- <div class="modal__form"> -->
+                <div class="modal__form">
                     <label class="modal__form-label" for="email">
                         Email
                     </label>
@@ -481,38 +481,37 @@
                             <use href="./images/icons.svg#icon-email-black-18dp"></use>
                         </svg>
                     </div>
-                <!-- </div> -->
+                </div>
 
-                <!-- <div class="modal__form-comment"> -->
-                    <label class="modal__form-comment modal__form-label" for="user-comment">
+                <div class="modal__form-comment">
+                    <label class="modal__form-label" for="user-comment">
                         Comment
                     </label>
                     <textarea class="modal__form-textarea" name="user-comment" id="user-comment"
                         placeholder="Text input"></textarea>
-                <!-- </div> -->
-            
-            <!-- user-privacy -->
-                <!-- <div class="modal__form-input-checkbox"> -->
-                    <input type="checkbox" class="modal__form-check visually-hidden" value="true" name="user-privacy" id="user-privacy" />
-                    <label class="modal__form-check-description" for="user-privacy">
-                        <span class="modal__form-check-checkbox">
-                            <svg class="modal__form-check-svg" width="10" height=8>
+                </div>
+
+                <div class="modal__form-input-checkbox">
+                    <input type="checkbox" class="visually-hidden" value="true" name="user-privacy" id="user-privacy" />
+                    <label class="modal__form-label" for="user-privacy">
+                        <span class="modal__form-custom-checkbox">
+                            <svg class="modal__form-svg" width="10" height=8>
                                 <use href="./images/icons.svg#icon-property_click"></use>
                             </svg>
-                        I accept the terms and conditions of the 
-                        <a href="" target="_blank" rel="noopener no-referrer" class="privacy-policy">Privacy Policy</a>
                         </span>
+                        I accept the terms and conditions of the <a href="" class="privacy-policy">Privacy Policy</a>
+
                     </label>
                 </div>
-                <div class="form__btn">
-                    <button class="banner__btn form__btn" type="submit">
-                        Send
-                    </button>
-                </div>
+
+                <button class="modal__form-btn" type="submit">
+                    Send
+                </button>
+
 
             </form>
 
-        <!-- </div> -->
+        </div>
     </div>
 
     <script src="./modal.js"></script>
