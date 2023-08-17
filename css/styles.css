@@ -391,7 +391,7 @@ body {
     fill: #4D5AE5;
     border-color: var(--color-iris);
 }
-.modal__form-input-checkbox {
+.modal__check-wrapper {
     margin-bottom: 24px;
 }
 .modal-form-label-checkbox {
@@ -422,7 +422,7 @@ body {
     cursor: pointer;
 }
 
-.modal__form-input-checkbox input:checked + span {
+.modal__check-wrapper input:checked + span {
     background-color: var(--color-ocean); 
     border: none;
     fill: var(--color-cloud);
@@ -452,7 +452,39 @@ border-radius: 2px;
     line-height: 1.17;
     letter-spacing: 0.04em;
 }
-            
+            /*  */
+.modal__check-wrapper {
+  margin-bottom: 24px;
+}
+
+.modal__check-input:checked + .checkbox-container .modal__form-custom-checkbox {
+  background-color: var(--color-ocean);
+  border: none;
+  fill: var(--color-cloud);
+}
+
+.checkbox-container {
+  color: var(--color-light-slate);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+
+.modal__form-custom-checkbox {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  margin-right: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+            /*  */
 
 input[type="checkbox"]:checked + .checkbox-container .checkmark {
     background-color: var(--color-ocean);
@@ -537,7 +569,7 @@ input[type="checkbox"]:checked + .checkbox-container .checkmark {
             input:checked + span svg.icon {
                 fill: #F4F4FD; 
             }
-            .modal__form-input-checkbox input:checked + span {
+            .modal__check-wrapper input:checked + span {
                 background-color: #404bbf; 
                 border: none;
                 fill: #F4F4FD;
@@ -596,7 +628,7 @@ input[type="checkbox"]:checked + .checkbox-container .checkmark {
     border-color: var(--color-iris);
     fill: var(--color-iris);
 }
-.modal__form-input-checkbox {
+.modal__check-wrapper {
     color: var(--color-light-slate);
     font-size: 12px;
     line-height: 1.17;
@@ -604,7 +636,7 @@ input[type="checkbox"]:checked + .checkbox-container .checkmark {
 
     cursor: pointer;
 }
-.modal__form-input-checkbox span{
+.modal__check-wrapper span{
     width: 16px;
     height: 16px;
     border: 1px solid var(--color-blue, rgba(46, 47, 66, 0.40));
