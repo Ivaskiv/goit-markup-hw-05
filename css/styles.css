@@ -609,6 +609,15 @@ input[type="checkbox"]:checked + .checkbox-container span {
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal__form-checkbox-svg {
+    position: absolute;
+    margin: 0 auto;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .modal__form-comment textarea{
     font-family: Roboto;
     font-size: 12px;
