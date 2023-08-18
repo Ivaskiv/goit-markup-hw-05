@@ -427,6 +427,16 @@ body {
     border: none;
     fill: var(--color-cloud);
 }
+.checkbox-container {
+    margin-bottom: 4px;
+            cursor: pointer;
+            user-select: none;
+
+    color: var(--color-light-slate);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+}
 .checkbox-container span{
     width: 16px;
     height: 16px;
@@ -434,24 +444,13 @@ body {
     align-items: center;
     justify-content: center;
     fill: transparent;
-border-radius: 2px;
+    border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
                 border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
                 fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox-container {
-    margin-bottom: 4px;
-            cursor: pointer;
-            user-select: none;
 
-    color: var(--color-light-slate);
-    font-family: Roboto;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-}
             /*  */
 .modal__check-wrapper {
     margin-bottom: 24px;
@@ -482,28 +481,15 @@ border-radius: 2px;
 .modal__form-custom-checkbox {
     border: 1px solid rgba(46, 47, 66, 0.4);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.modal__form-custom-checkbox span{
-    width: 16px;
-    height: 16px;
-    border-radius: 2px;
-    
+/*  */
 
-    margin-right: 8px;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    fill: transparent;
-}
-            /*  */
 .modal__form-svg {
     display: flex;
-    position: relative;
+    position: absolute;
 }
 input[type="checkbox"]:checked + .checkbox-container span {
     background-color: var(--color-ocean);
@@ -542,7 +528,6 @@ input[type="checkbox"]:checked + .checkbox-container span {
 .modal__title {
     width: 360px;
     color: var(--color-blue);
-    text-align: center;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
@@ -654,20 +639,22 @@ input[type="checkbox"]:checked + .checkbox-container span {
     letter-spacing: 0.04em;
 
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    border: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__check-wrapper {
+.modal__check-wrapper span{
     width: 16px;
     height: 16px;
     border: 1px solid var(--color-blue, rgba(46, 47, 66, 0.40));
     border-radius: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* border: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    fill: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    
 
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    fill: transparent;
+    
 
     color: var(--color-light-slate);
     font-size: 12px;
