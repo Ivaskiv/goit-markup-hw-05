@@ -391,9 +391,7 @@ body {
     fill: #4D5AE5;
     border-color: var(--color-iris);
 }
-.modal__check-wrapper {
-    margin-bottom: 24px;
-}
+
 .modal-form-label-checkbox {
     width: 360px;
     display: inline-flex;    
@@ -427,23 +425,12 @@ body {
     border: none;
     fill: var(--color-cloud);
 }
-.checkmark span{
-    width: 16px;
-    height: 16px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    fill: transparent;
-border-radius: 2px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-                border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-                fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 .checkbox-container {
+    display: block;
+
     margin-bottom: 4px;
-            cursor: pointer;
-            user-select: none;
+    cursor: pointer;
+    user-select: none;
 
     color: var(--color-light-slate);
     font-family: Roboto;
@@ -453,9 +440,6 @@ border-radius: 2px;
     letter-spacing: 0.04em;
 }
             /*  */
-.modal__check-wrapper {
-    margin-bottom: 24px;
-}
 .modal__form-label {
     font-size: 12px;
     line-height: 1.17;
@@ -470,15 +454,10 @@ border-radius: 2px;
     border: none;
     fill: var(--color-cloud);
 }
-
-.checkbox-container {
-    display: block;
-
-    color: var(--color-light-slate);
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
+.modal__check-input:focus svg {
+    fill: #4D5AE5; 
 }
+
 .modal__form-custom-checkbox {
     border: 1px solid rgba(46, 47, 66, 0.4);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -490,8 +469,10 @@ border-radius: 2px;
     width: 16px;
     height: 16px;
     border-radius: 2px;
-    
-
+            border: 1px solid rgba(46, 47, 66, 0.4); 
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                        border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-right: 8px;
 
     display: inline-flex;
@@ -658,7 +639,7 @@ input[type="checkbox"]:checked + .checkbox-container span {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-
+    margin-bottom: 24px;
     cursor: pointer;
 }
 .modal__check-wrapper span{
