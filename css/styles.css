@@ -384,14 +384,6 @@ body {
     border: 1px solid var(--color-blue, rgba(46, 47, 66, 0.40));
 }
 
-.modal__form-input input:focus {
-    stroke: var(--color-iris);
-    border-radius: 4px;
-    border: 1px solid var(--color-iris);
-    fill: #4D5AE5;
-    border-color: var(--color-iris);
-}
-
 .modal-form-label-checkbox {
     width: 360px;
     display: inline-flex;    
@@ -439,7 +431,6 @@ body {
     line-height: 1.17;
     letter-spacing: 0.04em;
 }
-            /*  */
 .modal__form-label {
     font-size: 12px;
     line-height: 1.17;
@@ -454,11 +445,8 @@ body {
     border: none;
     fill: var(--color-cloud);
 }
-.modal__check-input:focus svg {
-    fill: #4D5AE5; 
-}
 
-.modal__form-custom-checkbox{
+.modal__form-custom-checkbox {
     width: 16px;
     height: 16px;
     border-radius: 2px;
@@ -474,7 +462,6 @@ body {
 
     fill: transparent;
 }
-            /*  */
 
 input[type="checkbox"]:checked + .checkbox-container span {
     background-color: var(--color-ocean);
@@ -544,34 +531,11 @@ input[type="checkbox"]:checked + .checkbox-container span {
     background-color: transparent; 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-            .modal__form-input input:focus {
-                border-color: var(--color-iris);
-            }
-            .modal__form-check input:checked {
-            background-color:#404bbf; 
-            border: none;
-            fill:#F4F4FD; 
-            }
-            input:checked + span {
-                background-color:  #404bbf; 
-                bottom: none;
-            }
-            input:checked + span svg.icon {
-                fill: #F4F4FD; 
-            }
-            .modal__check-wrapper input:checked + span {
-                background-color: #404bbf; 
-                border: none;
-                fill: #F4F4FD;
-            }
-            .modal-form-input:hover,
-            .modal-form-input:focus {
-                stroke: var(--color-iris);
-                border-radius: 4px;
-                border: 1px solid var(--color-iris);
-                            fill: #4D5AE5;
-            }
-
+.modal__form-input input:focus {
+    border-radius: 4px;
+    border: 1px solid var(--color-iris);
+    stroke: var(--color-iris);
+}
 .modal__form-svg {
     width: 18px;
     height: 24px;
