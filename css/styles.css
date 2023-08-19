@@ -440,13 +440,14 @@ body {
     display: block;
     margin-bottom: 4px;
 }
-.modal__check-input:checked + .checkbox-container .modal__form-custom-checkbox {
+.modal__check-input:checked + .checkbox-container .modal-form-custom-checkbox {
     background-color: var(--color-ocean);
     border: none;
     fill: var(--color-cloud);
 }
 
-.modal__form-custom-checkbox {
+.modal-form-custom-checkbox,
+.checkbox-container span {
     width: 16px;
     height: 16px;
     border-radius: 2px;
